@@ -1,12 +1,13 @@
 <?php
 print_r($_POST);
 
-if(!empty($_POST)){
+if(!isset($_POST[$userName])){
     $userName = htmlspecialchars($_POST['login']);
     $userPassword = $_POST['password'];
     $send = $_POST['send'];
 
 };
+
 
 
 ?>
